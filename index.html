@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>Web Challenge</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  </head>
+  <body>
+
+    <header class="container group">
+
+      <div id="search"><span><i class="fa fa-search" aria-hidden="true"></i></span> <input type="text" placeholder="Search everywhere"></div>
+
+      <nav class="navigation">
+
+        <span onclick="this.classList.toggle('opened');document.getElementById('n-primary').classList.toggle('opened');" id="mobile-toggle-menu"><i class="fa fa-bars" aria-hidden="true"></i></span>
+
+        <ul id="n-primary">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Dashboard</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Campaigns / Brand</a></li>
+          <li><a href="#">Files</a></li>
+          <li><a href="#">Departments</a></li>
+          <li><a href="#" class="active">Members</a></li>
+        </ul>
+      </nav>
+
+    </header>
+
+    
+    <div class="banner">
+      <div class="tint"></div>
+      <div class="container">
+        <h1 class="banner--title">Welcome to the Community</h1>
+        <h2 class="banner--sub-title">Share, connect and collaborate.</h2>
+      </div>
+    </div>
+
+
+    <main id="content" class="container">
+
+      <h2>Members</h2>
+
+      <div id="members_container">
+        
+      </div>
+
+      <a id="js-btn-action-more" class="btn-load-more" href="#">Load more</a>
+
+    </main>
+
+
+    <footer class="footer">
+      <div class="container group">
+        <p>© 2016</p>
+        <img src="assets/community-footer-logo.jpg" alt="footer logo Igloo">
+      </div>
+    </footer>
+
+    <!--[if lt IE 9]>
+      <script src="js/wowIe.js"></script>
+    <![endif]-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mootools/1.6.0/mootools-core.min.js"></script>
+    <script src="js/apiClient.js"></script>
+    <script src="js/main.js"></script>
+
+  </body>
+</html>
